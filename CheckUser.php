@@ -18,9 +18,7 @@ if($typeLogin == 0){
 }
 
 require('connectToDatabase.php');
-
 $connected = new database();
-
 $sql = "
     SELECT Username, Password 
     FROM ".$condition."
@@ -28,7 +26,6 @@ $sql = "
     ";
 
     $query = mysqli_query($connected->getDatabase(), $sql);
-    
     $objResult = mysqli_fetch_array(mysqli_query($connected->getDatabase(), $sql));
     // เช็ค username และ password
     mysqli_close($connected->getDatabase());
@@ -55,7 +52,6 @@ $sql = "
         if ($typeLogin == 0){
             $_SESSION['login'] = "fail";
             header("Location: loginuser/Login.php");
-            
   
         }
         else {
