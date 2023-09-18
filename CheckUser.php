@@ -42,7 +42,8 @@ echo 34;
             echo 41;
             $_SESSION['login'] = "success";
             echo 45;
-            header("Location: https://hygeashotel.iservkmitl.tech/", TRUE);
+            header("Location: index.php");
+            exit();
             echo 47;
         }
         else{
