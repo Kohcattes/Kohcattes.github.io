@@ -38,12 +38,13 @@ echo 34;
         $_SESSION['user_login'] = $enteredUsername;
         // $_SESSION['user_stay'] = 0;
         if ($typeLogin == 0){
+            echo 41;
             $_SESSION['login'] = "success";
             header("Location: /index.php");
             exit();
         }
         else{
-
+            echo 47;
             header("Location: /index.php");
             exit();
         }
