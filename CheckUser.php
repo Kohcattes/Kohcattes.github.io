@@ -4,19 +4,19 @@
 </head>
 
 <?php
-
+echo 7;
 session_start();
 $enteredUsername = $_POST['username'];
 $enteredPassword = $_POST['password'];
 $typeLogin = $_POST['user'];
 
-
+echo 13;
 if($typeLogin == 0){
     $condition = "Account";
 }else if($typeLogin == 1){
     $condition = "admin";
 }
-
+echo 19;
 require('connectToDatabase.php');
 $connected = new database();
 $sql = "
