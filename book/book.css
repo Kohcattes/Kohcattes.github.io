@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alice'", serif;
+    font-size: 50%;
+    font-size: 10px;
+	background-size: cover;
+	background-image: url("../home/piccc.jpg");
+
+}
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 4rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 550;
+}
+
+.nav div.logo a:hover {
+    color: #ffffff;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    font-weight: 500; 
+    padding: 0;
+    padding-right: 5rem;
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 65px;
+    font-size: 2rem;
+
+}
+.nav div.main_list ul li a:hover{
+    color: #000000;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    right: 100%; 
+}
+
+/* sign in */
+
+.nav li:last-child a {
+    background-color:#021b24;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    box-shadow: 0px 15px 13px -10px rgba(0, 0, 0,0.2);
+    transition: all 0.4s;
+  }
+  
+  .nav li:last-child a:hover {
+    background: rgba(241, 241, 241, 0.5);
+  }
+
+  .nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.affix {
+    padding: 0;
+    background-color: #ffffff;
+}
+
+
+
+/* sec book */
+
+.section {
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 55%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#select-book{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	
+}
+
+.bg-select{
+	background-color:#021b24;
+	position: absolute;
+    border-radius: 20px;
+    padding: 0px 100px;
+    box-shadow: 0px 15px 13px -10px rgba(0, 0, 0,0.2);
+    transition: all 0.4s;
+	z-index: 1;
+}
+#select-book h1{
+	position: relative;
+	font-weight: 900;
+	color: #fff;
+	margin-top: -16%;
+	font-size: 30px;
+	text-transform: capitalize;
+	left: -90%;
+}
+#select-book .form-controlbook {
+	background-color: #fff;
+	height: 38px;
+	padding: 0px 36px;
+	color: #151515;
+	text-align: center;
+	position: absolute;
+	border: 1px solid #e5e5e5;
+	font-size: 16px;
+	margin-top: -20%;
+	left: 15%;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+#room{
+    z-index: 0;
+	font-family: 'Alice', serif;
+	background-image: url("../home/bedroom.jpg");
+}
+
+#ballroom{
+    z-index: 0;
+	display: none;
+	font-family: 'Alice', serif;
+	background-size: cover;
+	background-image: url("../ballroom/image/ballroom1.webp");
+}
+
+#ballroom .booking-form .booking-bg{
+	position: absolute;
+	left: 10px;
+	top: -25px;
+	bottom: -25px;
+	width: 350px;
+	background-image: url("../ballroom/image/ballroom2.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+#seminar{
+    z-index: 0;
+	display: none;
+	font-family: 'Alice', serif;
+	background-size: cover;
+	background-image: url("../seminar/image/VIE-HOTEL-30_09_2020-Class-Room-10-0487-Main_s-1.jpg");
+}
+
+#seminar .booking-form .booking-bg{
+	position: absolute;
+	left: 10px;
+	top: -25px;
+	bottom: -25px;
+	width: 350px;
+	background-image: url("../seminar/image/Untitled-design-11-1500x550.png");
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+/* #room{
+	display: none;
+} */
+
+
+.booking-form {
+	position: relative;
+	width: 65%;
+	margin: auto;
+	background: #fff;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .booking-bg {
+	position: absolute;
+	left: 10px;
+	top: -25px;
+	bottom: -25px;
+	width: 350px;
+	background-image: url("/home/piccc.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.booking-form .booking-bg::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #021b24;
+    opacity: 80%;
+}
+
+.booking-form>form {
+	margin-left: 425px;
+	padding: 30px;
+}
+
+.booking-form .form-header {
+	margin-bottom: 30px;
+	margin-top: 60px;
+	position: relative;
+	z-index: 20;
+}
+
+.booking-form .form-header h2 {
+	font-family: 'Playfair Display', serif;
+	margin-top: -8%;
+	margin-bottom: 15px;
+	font-weight: 900;
+	color: #fff;
+	font-size: 42px;
+	text-transform: capitalize;
+}
+
+.booking-form .form-header p {
+	color: #fff;
+	font-size: 18px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form .form-controlroom {
+	background-color: #fff;
+	height: 38px;
+	padding: 0px 10px;
+	color: #151515;
+	border: 1px solid #e5e5e5;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+
+
+.booking-form .form-controlday {
+	background-color: #fff;
+	height: 40px;
+	padding: 0px 60px;
+	color: #5b5a5a;
+	border: 1px solid #e5e5e5;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .form-controlchild {
+	background-color: #ffffff;
+	height: 38px;
+	padding: 0px 30px;
+	color: #635e5e;
+	border: 1px solid #e5e5e5;
+	font-size: 14px;
+	font-weight: 200;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control::placeholder {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control:focus {
+	background: #f8f8f8;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: #e5e5e5;
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control:invalid {
+	color: #e5e5e5;
+}
+
+.booking-form select.form-control option {
+	color: #151515;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 2px;
+	bottom: 10px;
+	width: 32px;
+	line-height: 32px;
+	height: 10px;
+	text-align: center;
+	pointer-events: none;
+	color: #e5e5e5;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	color: #021b24;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 20px;
+}
+
+.booking-form .form-btn {
+	margin-top: 30px;
+}
+
+.booking-form .submit-btn {
+    position: relative;
+	width: 70%;
+	color: #fff;
+	background-color: #021b24;
+    opacity: 85%;
+	font-weight: 600;
+	font-size: 18px;
+	border: none;
+	border-radius: 40px;
+	height: 50px;
+    left: 15%;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+.booking-form .btn-ballroom{
+	position: relative;
+	width: 52%;
+	color: #ffffff;
+	background-color: #ffffff58;
+    opacity: 85%;
+	font-weight: 600;
+	font-size: 14px;
+	border: none;
+	border-radius: 30px;
+	height: 50px;
+    left: 1%;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+	background-color: #6e8a94;
+    opacity: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+	.booking-form .booking-bg {
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: -15px;
+		width: 95%;
+		margin: auto;
+	}
+	.booking-form>form {
+		margin-left: 0px;
+	}
+}
