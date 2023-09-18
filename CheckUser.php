@@ -5,7 +5,6 @@
 </head>
 
 <?php
-ob_start();
 echo 7;
 session_start();
 $enteredUsername = $_POST['username'];
@@ -42,7 +41,9 @@ echo 34;
         if ($typeLogin == 0){
             echo 41;
             $_SESSION['login'] = "success";
+            echo 45;
             header("Location: index.php");
+            echo 47;
         }
         else{
             echo 47;
@@ -64,6 +65,5 @@ echo 34;
         }
         //"Login.html?login=false" (การreturn ค่า)
     }
-    ob_end_clean();
 ?>
 </html>
