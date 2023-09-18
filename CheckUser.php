@@ -1,9 +1,11 @@
+<html>
 <head>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
 <?php
+ob_start();
 echo 7;
 session_start();
 $enteredUsername = $_POST['username'];
@@ -41,14 +43,12 @@ echo 34;
             echo 41;
             $_SESSION['login'] = "success";
             header("Location: index.php");
-            exit();
         }
         else{
             echo 47;
             header("Location: index.php");
-            exit();
         }
-    }
+            }
 
     else {
         echo 53;
@@ -63,7 +63,7 @@ echo 34;
 
         }
         //"Login.html?login=false" (การreturn ค่า)
-        exit();
     }
-    
+    ob_end_clean();
 ?>
+</html>
