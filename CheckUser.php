@@ -18,15 +18,10 @@ if($typeLogin == 0){
 }
 
 require('connectToDatabase.php');
-$connected = new database();
-$sql = "
-    SELECT Username, Password 
-    FROM ".$condition."
-    WHERE Username LIKE '". $enteredUsername ."';
-    ";
 
-    $query = mysqli_query($connected->getDatabase(), $sql);
-    $objResult = mysqli_fetch_array(mysqli_query($connected->getDatabase(), $sql));
+$connected = new database();
+
+    $objResult = mysqli_fetch_array($connected->executeQuery($condition, "Username, Password", null, "Username LIKE '". $enteredUsername ."'"));
     // เช็ค username และ password
     mysqli_close($connected->getDatabase());
     $username = $objResult["Username"];
