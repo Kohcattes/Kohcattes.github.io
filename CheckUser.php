@@ -28,7 +28,7 @@ $connected = new database();
     $pass = $objResult["Password"];
 
     if($enteredUsername == $username && $enteredPassword == $pass){
-        $result = mysqli_fetch_assoc($query);
+        $result = mysqli_fetch_assoc($connected->executeQuery($condition, "Username, Password", null, "Username LIKE '". $enteredUsername ."'"));
         $_SESSION['user_login'] = $enteredUsername;
         // $_SESSION['user_stay'] = 0;
         if ($typeLogin == 0){
