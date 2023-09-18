@@ -38,12 +38,12 @@ $sql = "
         // $_SESSION['user_stay'] = 0;
         if ($typeLogin == 0){
             $_SESSION['login'] = "success";
-            header("Location: index.php");
+            header("Location: /index.php");
             exit();
         }
         else{
 
-            header("Location: index.php");
+            header("Location: /index.php");
             exit();
         }
     }
@@ -51,12 +51,12 @@ $sql = "
     else {
         if ($typeLogin == 0){
             $_SESSION['login'] = "fail";
-            header("Location: loginuser/Login.php");
+            header("Location: /loginuser/Login.php");
   
         }
         else {
             $_SESSION['login'] = "fail";
-            header("Location: loginemploy/Login.php");
+            header("Location: /loginemploy/Login.php");
 
         }
         //"Login.html?login=false" (การreturn ค่า)
