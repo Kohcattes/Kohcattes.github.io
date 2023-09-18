@@ -5,7 +5,7 @@
 </head>
 
 <?php
-echo 7;
+
 session_start();
 $enteredUsername = $_POST['username'];
 $enteredPassword = $_POST['password'];
